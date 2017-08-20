@@ -17,3 +17,7 @@ print_double = &(&1 * 2)
 
 IO.puts print_double.(30)
 
+{paradigm, language}  = {:functional, "Elixir"}
+IO.puts "Paradigm: #{paradigm}"
+IO.puts "Language: #{language}"
+
