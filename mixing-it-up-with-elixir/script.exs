@@ -12,3 +12,8 @@ end
 IO.puts perform_operation.([1, 2, 3, 4], :addition)
 IO.puts perform_operation.([1, 2, 3, 4], :multiplication)
 
+# print_double = fn(number) -> number * 2 end
+print_double = &(&1 * 2)
+
+IO.puts print_double.(30)
+
