@@ -21,3 +21,7 @@ IO.puts print_double.(30)
 IO.puts "Paradigm: #{paradigm}"
 IO.puts "Language: #{language}"
 
+person = %{ "name" => "Sam", "age" => 31 }
+%{ "age" => age }  = person
+IO.puts "Age is #{age}"
+
