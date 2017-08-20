@@ -52,7 +52,9 @@ to = 123124
 amount = 100.00
 
 case Account.transfer_amount(from, to, amount) do
-  {:ok, value} -> IO.puts("Transferred: $#{value}")
-  {:error, message} -> IO.puts("Error: #{message}")
+  {:ok, value}
+    when value > 1000 ->  IO.puts "Amount transferred."
+  {:ok, value} -> IO.puts "Transferred: $#{value}"
+  {:error, message} -> IO.puts "Error: #{message}"
 end
 
